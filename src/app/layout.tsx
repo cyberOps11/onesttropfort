@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/next';
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "next-themes";
@@ -28,6 +29,7 @@ export default function RootLayout({
           <div>{children}</div>
           <Footer />
           <PopupWidget />
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
